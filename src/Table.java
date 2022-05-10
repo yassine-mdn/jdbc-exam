@@ -277,7 +277,7 @@ public class Table extends javax.swing.JFrame {
 
     private void comboBoxProfessionActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
-       /* if (mapProfession.size()!= 0) {
+       if (mapProfession.size()!= 0) {
 
             int index = mapProfession.get(comboBoxProfession.getSelectedIndex());
 
@@ -292,7 +292,7 @@ public class Table extends javax.swing.JFrame {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        }*/ //khedama mais ka t3enkech m3a selection 7itach jame3houm bjouj f 7aja we7ada :/
+        }
     }
 
     private void enregistrerActionPerformed(java.awt.event.ActionEvent evt) {
@@ -399,7 +399,6 @@ public class Table extends javax.swing.JFrame {
         emailField.setText("" + tableParicipant.getValueAt(row, 2));
         ageSpinner.setValue(tableParicipant.getValueAt(row, 3));
         prenomField.setText("" +tableParicipant.getValueAt(row, 4));
-        comboBoxProfession.setSelectedItem("" +tableParicipant.getValueAt(row, 5));
         String c = "" + tableParicipant.getValueAt(row, 6);
         switch (c) {
             case "Mme" -> mme.setSelected(true);
